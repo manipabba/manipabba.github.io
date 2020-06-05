@@ -128,7 +128,7 @@ document.getElementById("scramble-button").addEventListener("click", evt => {
 //random picture setter
 document.getElementById("set-picture").addEventListener("click", evt => {
   picture = new Image();
-  picture.src = "Images\\" + pictureArray[Math.floor(Math.random() * (pictureArray.length-1))];
+  picture.src = "Images\\" + pictureArray[Math.floor(Math.random() * (pictureArray.length))];
   isColor = false;
   picture.onload = loadNewCanvas;
 });
