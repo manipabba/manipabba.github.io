@@ -1,0 +1,128 @@
+body {
+  background: url("Images/background.png");
+  /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+}
+/*dropdown content*/
+.dropbtn{
+  background-color: #FB8122;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #1D2228;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropbtn-options {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: left;
+}
+
+.dropbtn-options:hover {
+  background-color: #E1E2E2;
+  color: #1D2228!important; /*making sure hover not overrided by anything else */
+}
+
+/*
+.dropbtn:hover {
+  background-color: #E1E2E2;
+}
+*/
+
+#dropbar{
+  float: left;
+}
+#dropbar:hover .dropdown-content {
+  display: block;
+}
+
+#dropbar:hover .dropbtn {
+  background-color: #e96804;
+}
+
+/*Navbar properties*/
+
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FB8122;
+}
+
+.nav-item{
+  float: left;
+  background-color: #FB8122;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px;
+}
+
+#scramble-button{
+  float: right;
+}
+
+#myslider{
+  float: right;
+  border: none;
+  outline: none;
+  padding: none;
+  margin: 16px;
+  background: #E1E2E2;
+}
+
+#myslider::-webkit-slider-thumb {
+  appearance: none;
+  background: #1D2228;
+  cursor: pointer;
+}
+
+button{
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #e96804;
+}
+
+/*Canvas CSS
+*temp using image for testing purposes
+*/
+/*
+#image{
+  padding: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+*/
+#canvas{
+  padding: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 1300px;
+  height: 500px;
+}
