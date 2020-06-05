@@ -10,18 +10,29 @@ var color2 = "#E1E2E2";
 var colorArray = [];
 var colorImage = undefined;
 var delay = 2;
+var picture = new Image();
+var pictureArray = ["apple.png", "hexagon.png", "triangle.gif", "zebra.jpg"];
+var isColor = true;
+
 //variables for CSS styling and script
 var sortingAlgorithms = ["BubbleSort", "SelectionSort", "InsertionSort", "QuickSort", "MergeSort", "HeapSort"];
 var currAlgorithm = sortingAlgorithms[0]; //choosing first as default
 
 //create canvas
 var loadNewCanvas = function(){
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  var grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-  grd.addColorStop(0, color1);
-  grd.addColorStop(1, color2);
-  ctx.fillStyle = grd;
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  if(isColor){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var grd = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    grd.addColorStop(0, color1);
+    grd.addColorStop(1, color2);
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
+  else{
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(picture, 0, 0, picture.width, picture.height, 0, 0, canvas.width, canvas.height); //streches image
+    picture.style.display = 'none';
+  }
 
   //creating base image object list
   colorArray = []; //resetting array
@@ -77,6 +88,7 @@ for(let i = 0; i < sortingAlgorithms.length; i++){
 
 //color input listners
 document.getElementById("color1-input").onchange = evt => {
+  isColor = true;
   color1 = evt.target.value;
   document.getElementById("color1").style["background-color"]=color1;
   loadNewCanvas();
@@ -84,6 +96,7 @@ document.getElementById("color1-input").onchange = evt => {
 };
 
 document.getElementById("color2-input").onchange = evt => {
+  isColor = true;
   color2 = evt.target.value;
   document.getElementById("color2").style["background-color"]=color2;
   loadNewCanvas();
@@ -110,6 +123,14 @@ document.getElementById("scramble-button").addEventListener("click", evt => {
   //redraws new image on canvas
   //ctx.putImageData(colorImage, 0, 0);
   //updateArray(); //updates Canvas variables to correct state
+});
+
+//random picture setter
+document.getElementById("set-picture").addEventListener("click", evt => {
+  picture = new Image();
+  picture.src = "Images/" + pictureArray[Math.floor(Math.random() * (pictureArray.length-1))];
+  isColor = false;
+  picture.onload = loadNewCanvas;
 });
 
 
