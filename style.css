@@ -2,6 +2,10 @@ body {
   background: url("Images/background.png");
   /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
 }
+
+html{
+  overflow: hidden;
+}
 /*dropdown content*/
 .dropbtn{
   background-color: #FB8122;
@@ -123,6 +127,6 @@ button{
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  width: 1300px;
-  height: 500px;
+  width: 1450px;
+  height: 600px;
 }

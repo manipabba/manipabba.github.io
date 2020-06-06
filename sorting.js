@@ -15,7 +15,7 @@ var pictureArray = ["apple.png", "hexagon.png", "triangle.gif", "zebra.jpg"];
 var isColor = true;
 
 //variables for CSS styling and script
-var sortingAlgorithms = ["BubbleSort", "SelectionSort", "InsertionSort", "QuickSort", "MergeSort", "HeapSort"];
+var sortingAlgorithms = ["BubbleSort", "CocktailSort", "SelectionSort", "InsertionSort", "QuickSort", "MergeSort", "HeapSort"];
 var currAlgorithm = sortingAlgorithms[0]; //choosing first as default
 
 //create canvas
@@ -126,18 +126,22 @@ document.getElementById("scramble-button").addEventListener("click", evt => {
 });
 
 //random picture setter
+/* //not using right now
 document.getElementById("set-picture").addEventListener("click", evt => {
   picture = new Image();
   picture.src = "Images\\" + pictureArray[Math.floor(Math.random() * (pictureArray.length))];
   isColor = false;
   picture.onload = loadNewCanvas;
 });
-
+*/
 
 //sort eventlistener
 document.getElementById("sort-button").addEventListener("click", evt => {
   if(currAlgorithm == "BubbleSort"){
     bubblesort();
+  }
+  else if(currAlgorithm == "CocktailSort"){
+    cocktailsort();
   }
   else if(currAlgorithm == "SelectionSort"){
     selectionsort();
@@ -162,7 +166,6 @@ document.getElementById("sort-button").addEventListener("click", evt => {
     //update animation
     redraw();
   }
-
 });
 
 //swaps values in an array
@@ -183,6 +186,34 @@ async function bubblesort(){
     redraw();
     await sleep(delay);
   }
+}
+
+async function cocktailsort(){
+  let swapped = false;
+  do{
+    swapped = false;
+    for(let i = 0; i < colorArray.length - 2; i++){
+      if(colorArray[i].id > colorArray[i+1].id){
+        swap(i, i+1, colorArray);
+        swapped = true;
+      }
+    }
+    if(!swapped){
+      break;
+    }
+    swapped = false;
+    for(let i = colorArray.length-2; i >=0; i--){
+      if(colorArray[i].id > colorArray[i+1].id){
+        swap(i, i+1, colorArray);
+        swapped = true;
+      }
+    }
+
+    redraw();
+    await sleep(delay);
+    
+  } while(swapped)
+  redraw();
 }
 
 async function selectionsort(){
