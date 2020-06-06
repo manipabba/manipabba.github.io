@@ -126,14 +126,14 @@ document.getElementById("scramble-button").addEventListener("click", evt => {
 });
 
 //random picture setter
-/* //not using right now
-document.getElementById("set-picture").addEventListener("click", evt => {
-  picture = new Image();
-  picture.src = "Images\\" + pictureArray[Math.floor(Math.random() * (pictureArray.length))];
-  isColor = false;
-  picture.onload = loadNewCanvas;
-});
-*/
+//not using right now
+//document.getElementById("set-picture").addEventListener("click", evt => {
+//  picture = new Image();
+//  picture.src = "Images\\" + pictureArray[Math.floor(Math.random() * (pictureArray.length))];
+//  isColor = false;
+//  picture.onload = loadNewCanvas;
+//});
+
 
 //sort eventlistener
 document.getElementById("sort-button").addEventListener("click", evt => {
