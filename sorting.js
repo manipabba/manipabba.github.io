@@ -211,7 +211,7 @@ async function cocktailsort(){
 
     redraw();
     await sleep(delay);
-    
+
   } while(swapped)
   redraw();
 }
