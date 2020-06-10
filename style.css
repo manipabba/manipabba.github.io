@@ -15,6 +15,7 @@ html{
   cursor: pointer;
   font-size: 16px;
   padding: 16px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .dropdown-content{
@@ -35,6 +36,8 @@ html{
   outline: none;
   border: none;
   text-align: left;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 .dropbtn-options:hover {
@@ -56,7 +59,8 @@ html{
 }
 
 #dropbar:hover .dropbtn {
-  background-color: #e96804;
+  /*background-color: #e96804;*/
+  filter: brightness(90%)!important;
 }
 
 /*Navbar properties*/
@@ -78,6 +82,21 @@ html{
   cursor: pointer;
   font-size: 16px;
   padding: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#BubbleSort{
+    color: #FB8122;
+}
+
+#color1{
+  background-color: #1D2228;
+  color: white;
+}
+
+#color2{
+  background-color: #E1E2E2;
+  color: black;
 }
 
 #scramble-button{
@@ -104,7 +123,8 @@ button{
 }
 
 .nav-item:hover {
-  background-color: #e96804;
+  /*background-color: #e96804;*/
+  filter: brightness(90%)!important;
 }
 
 /*Canvas CSS
