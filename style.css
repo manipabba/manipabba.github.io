@@ -1,6 +1,7 @@
 :root {
     font-size: 16px;
-    font-family: 'Open Sans';
+    /*font-family: 'Open Sans';*/
+    font-family: 'Raleway', sans-serif;
 
     /* Change these later! */
     --text-primary: #b6b6b6;
@@ -40,4 +41,9 @@ main {
     height: 100vh; /* relative to viewport*/
     position: fixed;
     background-color: var(--bg-primary);
+}
+
+.iframe-view {
+    width: 100%;
+    height: 750px;
 }
