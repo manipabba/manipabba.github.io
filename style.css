@@ -1,0 +1,43 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+
+    /* Change these later! */
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* update scrollbar */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24; /* update later*/
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+main {
+    margin-left: 5rem; /* unit relative to font size so nav bar doesnt overlap */
+    padding: 1rem;
+}
+
+/* Nav Bar*/
+.navbar {
+    width: 5rem;
+    height: 100vh; /* relative to viewport*/
+    position: fixed;
+    background-color: var(--bg-primary);
+}
