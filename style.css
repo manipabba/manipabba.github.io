@@ -24,11 +24,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #1e1e24; /* update later*/
+    background: #0D1821; /* update later*/
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #E6AACE;
 }
 
 main {
@@ -132,5 +132,4 @@ main {
     transform: rotate(-180deg);
 
 }
-
 
