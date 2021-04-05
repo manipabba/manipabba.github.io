@@ -134,3 +134,9 @@ main {
 
 }
 
+.bottom-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+}
+
