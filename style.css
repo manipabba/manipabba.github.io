@@ -43,6 +43,7 @@ main {
     position: fixed;
     background-color: var(--bg-primary);
     transition: width var(--transition-speed) ease;
+    filter: opacity(.96);
 }
 
 .nav-item {
