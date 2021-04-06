@@ -140,3 +140,12 @@ main {
     width: 15rem;
 }
 
+.language-names {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.language-bars {
+    display: inline-block;
+}
+
