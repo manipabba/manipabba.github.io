@@ -52,10 +52,10 @@ author = "Mani Pabba"
 
   [params.contact]
   enable = true
-  formAction = "" #contact form works with formspree.io
+  formAction = "https://formspree.io/f/mqkjabwr" #contact form works with formspree.io
 
   [params.footer]
-  email = "manipabba1@@gmail.com"
+  email = "manipabba1@gmail.com"
   address = "Clarksburg, MD"
   googlemaps = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49456.22337054455!2d-77.31907648077254!3d39.21984865389485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b629835c93e0cb%3A0xaaada00a918394b2!2sClarksburg%2C%20MD!5e0!3m2!1sen!2sus!4v1660819288503!5m2!1sen!2sus"
 

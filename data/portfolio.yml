@@ -1,0 +1,7 @@
+filter:
+  - label: Job Experience
+    value: job-experience
+  - label: Coursework
+    value: coursework
+  - label: Projects
+    value: projects

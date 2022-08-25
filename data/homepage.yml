@@ -11,7 +11,7 @@ social:
   gmail: manipabba1
 about:
   enable: true
-  content: 3rd Year Computer Engineering Student
+  content: 4th Year Computer Engineering Student
   button:
     btnText: Find out more
     URL: "/about"
@@ -102,5 +102,10 @@ leadership:
       duration: September 2014 - July 2018
 portfolio:
   filter:
-    - label: Web Dev
-      value: web-dev
+    - label: Job Experience
+      value: job-experience
+    - label: Coursework
+      value: coursework
+    - label: Projects
+      value: projects
+      
