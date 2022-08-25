@@ -1,0 +1,73 @@
+# Base information
+baseURL = "https://manipabba.github.io"
+languageCode = "en-gb"
+title = "Mani Pabba"
+theme = "hugo-developer-portfolio"
+googleAnalytics = ""
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"
+  [[params.plugins.js]]
+  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"
+
+
+# navigation
+[menu]
+
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight=1
+
+  [[menu.main]]
+  name = "Blog"
+  URL = "blog"
+  weight=2
+
+  [[menu.main]]
+  name = "Portfolio"
+  URL = "portfolio"
+  weight=3
+
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight=4
+
+
+[params]
+home = "Home"
+# Meta data
+description = "The website of Mani Pabba"
+author = "Mani Pabba"
+
+
+  [params.contact]
+  enable = true
+  formAction = "" #contact form works with formspree.io
+
+  [params.footer]
+  email = "manipabba1@@gmail.com"
+  address = "Clarksburg, MD"
+  googlemaps = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49456.22337054455!2d-77.31907648077254!3d39.21984865389485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b629835c93e0cb%3A0xaaada00a918394b2!2sClarksburg%2C%20MD!5e0!3m2!1sen!2sus!4v1660819288503!5m2!1sen!2sus"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "rainbow_dash"
+    tabWidth = 4
+
