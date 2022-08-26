@@ -1,7 +1,7 @@
 +++
 categories = ["projects"]
 coders = []
-date = 2020-06-19T23:00:00Z
+date = 2022-08-25
 description = "Neural Network Implementation of Flappy Bird"
 github = ["https://github.com/manipabba/Neural_Network_Flappy_Bird"]
 image = "tensorflow_logo.svg"

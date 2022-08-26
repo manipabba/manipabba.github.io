@@ -6,6 +6,7 @@ github = []
 image = "umd_job.svg"
 title = "UMD Coursework"
 type = "post"
+date = 2022-08-25
 +++
 This post consists of summaries for key courses I've taken at UMD. # MAKE PAGE WITH OPTIMIZATION PROJECT, HONEYPOT
 

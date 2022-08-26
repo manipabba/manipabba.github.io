@@ -6,6 +6,7 @@ github = []
 image = "aws_job.svg"
 title = "AWS CloudFormation Internship Experience"
 type = "post"
+date = 2022-08-25
 +++
 ## Overview
 During summer 2021 and summer 2022s, I worked as an SDE intern at AWS CloudFormation. This post explains my experiences over these summers. 
