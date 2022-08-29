@@ -3,7 +3,7 @@ baseURL = "https://manipabba.github.io"
 languageCode = "en-gb"
 title = "Mani Pabba"
 theme = "hugo-developer-portfolio"
-googleAnalytics = ""
+googleAnalytics = "G-QKT17Q70LW"
 
 # Plugins
 [params.plugins]
