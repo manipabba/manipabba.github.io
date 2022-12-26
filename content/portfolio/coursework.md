@@ -8,7 +8,7 @@ title = "UMD Coursework"
 type = "post"
 date = 2022-08-25
 +++
-This post consists of summaries for key courses I've taken at UMD. # MAKE PAGE WITH OPTIMIZATION PROJECT, HONEYPOT
+This post consists of summaries for key courses I've taken at UMD.
 
 ## Computer Science
 ### Advanced Data Structures
@@ -17,7 +17,7 @@ This post consists of summaries for key courses I've taken at UMD. # MAKE PAGE W
 - Applications in string processing, graphics, information retrieval, networks, and operating systems
 ### Machine Learning
 - Supervised and unsupervised learning
-- Neural Networks, SVGs, Decision Trees, CLustering
+- Neural Networks, SVMs, Decision Trees, Clustering, Bayes Classifiers, Markov Processes
 ### Artificial Intelligence
 - Heuristic search, planning, knowledge representation, logical and statistical inference, natural language processing, intelligent agents
 ### Computer Systems
@@ -27,6 +27,11 @@ This post consists of summaries for key courses I've taken at UMD. # MAKE PAGE W
 ### Algorithms
 - elementary algorithms related to sorting, graphs, trees, combinatorics
 - analysis of space time complexity with mathematical techniques to solve mathematical recurrences and summations
+### Web Development
+- JavaScript, HTML, CSS development
+- frontend and backend development
+- server-side development with PHP, Node, MongoDB
+- Development with frameworks such as Express
 
 
 ## Electrical Engineering
@@ -66,12 +71,21 @@ This post consists of summaries for key courses I've taken at UMD. # MAKE PAGE W
 - methods to solving ordinary differential equations, first and second order equations
 - laplace transforms, numerical methods, theory of differential equations
 ### Statistical Computing with SAS
+- Conducting and interpreting various statistical procedures such as hypothesis tests, confidence intervals, ANOVA, Chi-Squared, linear regression
+- Manipulation of data using SAS
+- Creating figures and datasets using SAS 
 
 ## Cybersecurity
 ### Reverse Engineering
 - compilers, linkers, loaders, assembly language (x86)
 - use of static and dynamic analysis tools such as Ghidra
 - computer architecture and low-level systems programming
+### Hardware Security
+- Safe digital logic design, prevention of authorized access from gate level, self-correcting designs, design trust
+- design IP protection, watermarking, digital fingerprinting
+- Physical attack approaches, countermeasures
+- Side channel attacks
+- Reversing of binaries and device firmware using Ghidra
 ### Applied Cybersecurity
 - project based class to implement a honeypot mechanism to analyze attacker behavior
 - use of Man in the middle, containers, VMs, networking, keylogging

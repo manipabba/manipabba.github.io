@@ -30,6 +30,9 @@ skill:
     - title: JavaScript
       logo: JavaScript_logo.svg
       description: Tensorflow.js, Processing.js
+    - title: Node
+      logo: node_logo.svg
+      description: Express, MongoDB
     - title: OCaml
       logo: ocaml_logo.svg
       description: Learned in course organization of programming languages
